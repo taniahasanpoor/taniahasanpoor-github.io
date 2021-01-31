@@ -1,0 +1,11 @@
+---
+layout: default
+title: Tania Hasanpoor's Blog
+---
+	<h1>Blog</h1>
+	<ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="http://taniahasanpoor.github.io/2021/01/30/tania-hasanpoor-site-launched" title="Tania Hasanpoor, Launches Site">Tania Hasanpoor, Launches Site</a></li>
+	  {% endfor %}
+	</ul>
