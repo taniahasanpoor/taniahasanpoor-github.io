@@ -11,7 +11,7 @@ layout: feed
  <id>http://taniahasanpoor.github.io/blog</id>
  <author>
    <name>Tania Hasanpoor</name>
-   <email>taniahasanpoor@gmail.com</email>
+   <email>taniahasanpoor@bu.edu</email>
  </author>
 
  {% for post in site.posts %}
