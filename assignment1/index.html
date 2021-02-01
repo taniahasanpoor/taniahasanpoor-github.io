@@ -14,11 +14,21 @@ title: Assignment 1
 	<h1>Assignment 1</h1>
 	<h2>Original</h2>
 	<img src="https://taniahasanpoor.github.io/assignment1/images/Original.png" alt="Original">
-	<p>Report.</p>
 	<h2>Grayscale</h2>
 	<img src="https://taniahasanpoor.github.io/assignment1/images/Grayscale.png" alt="Grayscale">
-	<p>Report.</p>
+	<p>In order to make a grayscale image, I created a list of all the pixel values for each of the three color channels.
+	   I found the maximum pixel value among all the channels and then assigned the maximum value to all the pixels
+           in each channel so now each pixel has the same value for each of the three color channels.</p>
 	<h2>Blur</h2>
 	<img src="https://taniahasanpoor.github.io/assignment1/images/Blur.png" alt="Blur">
-	<p>Report.</p>
+	<p>In order to blur the image, we had to assign the average value of each pixel along with its eight surrounding neighbors
+	   to every single pixel, meaning that it will form a 3x3 box and we are standing in the center. However, since this is a 3x3
+	   box, when we get to the edges, it does not consider them.</p>
+	<h2>Outline</h2>
+	<img src="https://taniahasanpoor.github.io/assignment1/images/Outline.png" alt="Outline">
+	<p>In order to make the outline effect, I made a copy of the image and set all the pixel values for all the color channels to 0,
+	   which makes the whole image black. In order to find the edges, we need to find the Euclidean distance between two
+     	   neighboring pixels and compare it to a value. Since we turned the image black, every pixel bigger than our chosen value
+	   would be white, indicating the edges and everything else would remain the same. At the end, we set our outline pixels to 255,
+	   which is white, to be visible on black.</p>
 </div>
